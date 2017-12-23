@@ -4,8 +4,7 @@ var router = express.Router();
 //var User = require('../models/user');
 
 //touse mongoose:
-var mongoose = require('mongoose');
-mongoose.connect('localhost:27017/node-angular');
+
 //thats a middleware
 //next for the middleware to travel on
 //for next to be applied you have to call it: next()

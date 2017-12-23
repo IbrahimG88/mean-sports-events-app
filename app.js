@@ -12,7 +12,7 @@ var mongoose = require('mongoose');
 
 var appRoutes = require('./routes/app');
 
-var messageRoutes = require('./routes/messages');
+var messageRoutes = require('./routes/events');
 
 
 /*start with app variable
@@ -54,7 +54,7 @@ app.use(function (req, res, next) {
 
 //what the lines mean:
 //if you get a "/message" path -> compile messageRoutes which is './messages/routes' file
-app.use('/message', messageRoutes);
+app.use('/event', messageRoutes);
 app.use('/', appRoutes);
 
 // when a request is not answered this middleware is used
